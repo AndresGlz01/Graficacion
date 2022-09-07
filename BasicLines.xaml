@@ -1,0 +1,57 @@
+﻿<Window x:Class="Graficacion.BasicLines"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Graficacion"
+        mc:Ignorable="d"
+        Title="Basic Lines" Height="450" Width="800">
+    <Canvas>
+        <!-- ##################     Line    ###################         
+             X1 Gets or sets the x-coordinate of the Line start point.  
+             Y1 Gets or sets the y-coordinate of the Line start point.  
+             X2 Gets or sets the x-coordinate of the Line end point.
+             Y2 Gets or sets the y-coordinate of the Line end point.
+             Stroke             Gets or sets the Brush that specifies how the Shape outline is painted.
+             StrokeDashArray    Gets or sets a collection of Double values that indicate the pattern of dashes and gaps that is used to outline shapes.
+             StrokeDashCap      Gets or sets a PenLineCap enumeration value that specifies how the ends of a dash are drawn.
+             StrokeDashOffset   Gets or sets a Double that specifies the distance within the dash pattern where a dash begins.
+             StrokeEndLineCap   Gets or sets a PenLineCap enumeration value that describes the Shape at the end of a line.
+             StrokeThickness    Gets or sets the width of the Shape outline.
+             StrokeStartLineCap Gets or sets a PenLineCap enumeration value that describes the Shape at the start of a Stroke. 
+        -->
+
+        <Line X1="10" Y1="10" X2="110" Y2="10" Stroke="Black"/>
+        <!-- Simple Line -->
+        <Line X1="10" Y1="20" X2="110" Y2="20" Stroke="Green" StrokeDashArray="1 2 1 1"/>
+        <!-- StrokeDashArray example -->
+        <Line X1="10" Y1="30" X2="110" Y2="30" Stroke="Purple" StrokeDashCap="Round" StrokeDashArray="1 1"/>
+        <!-- StrokeDashCap example -->
+        <Line X1="10" Y1="40" X2="110" Y2="40" Stroke="Brown" StrokeDashOffset="3" StrokeDashArray="1 2"/>
+        <!-- StrokeDashOffset example -->
+        <Line X1="10" Y1="50" X2="110" Y2="50" Stroke="Brown" StrokeEndLineCap="Round" StrokeDashArray="1 2"/>
+        <!-- StrokeEndLineCap example -->
+        <Line X1="10" Y1="60" X2="110" Y2="60" Stroke="Brown" StrokeThickness="2"/>
+        <!-- StrokeEndLineCap example -->
+        <Line X1="10" Y1="70" X2="110" Y2="70" Stroke="Brown" StrokeStartLineCap="Triangle"/>
+        <!-- StrokeEndLineCap example -->
+
+        <!-- ##################     Polyline    ###################
+             PointsProperty Identifies the Points dependency property.
+             FillRuleProperty Identifies the FillRule dependency property.
+        
+             StrokeLineJoin     Gets or sets a PenLineJoin enumeration value that specifies the type of join that is used at the vertices of a Shape.
+             StrokeMiterLimit   Gets or sets a limit on the ratio of the miter length to half the StrokeThickness of a Shape element. 
+             Fill Gets or sets the Brush that specifies how the shape's interior is painted. 
+        -->
+
+        <Polyline Points="10, 80, 10 100, 20 90, 30 100, 30 80" StrokeThickness="1" Stroke="Black"/>
+        <!-- Simple Polyline -->
+        <Polyline Points="10, 110, 10 130, 20 120, 30 130, 30 110" StrokeThickness="1" Stroke="Black" StrokeLineJoin="Round"/>
+        <!-- StrokeLineJoin example -->
+        <Polyline Points="10, 140, 10 160, 20 150, 30 160, 30 140" StrokeThickness="1" Stroke="Black" StrokeMiterLimit="1"/>
+        <!-- StrokeMiterLimit example -->
+        <Polyline Points="10, 140, 10 160, 20 150, 30 160, 30 140" StrokeThickness="1" Stroke="Black" Fill="MediumPurple"/>
+        <!-- Fill example -->
+    </Canvas>
+</Window>
