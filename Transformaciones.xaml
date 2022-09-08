@@ -1,0 +1,77 @@
+﻿<Window x:Class="Graficacion.Transformaciones"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Graficacion"
+        mc:Ignorable="d"
+        Title="Transformaciones" Height="450" Width="800">
+    <UniformGrid Columns="3" Rows="2">
+        <Canvas>
+            <Path Fill="Red" Data="M50,0 L0,50 H25 V100 H75 V50 H100 z" RenderTransformOrigin="0.5 0.5">
+                <Path.RenderTransform>
+                    <ScaleTransform ScaleY="0.5"/>
+                </Path.RenderTransform>
+            </Path>
+        </Canvas>
+        <Canvas>
+            <Path Fill="Red" Data="M50,0 L0,50 H25 V100 H75 V50 H100 z" RenderTransformOrigin="0.5 0.5"/>
+            <Path Fill="Green" Data="M50,0 L0,50 H25 V100 H75 V50 H100 z" RenderTransformOrigin="0.5 0.5">
+                <Path.RenderTransform>
+                    <TranslateTransform X="50"/>
+                </Path.RenderTransform>
+            </Path>
+        </Canvas>
+        <Canvas>
+            <Path Fill="Red" Data="M50,0 L0,50 H25 V100 H75 V50 H100 z" RenderTransformOrigin="0.5 0.5"/>
+            <Path Fill="Green" Data="M50,0 L0,50 H25 V100 H75 V50 H100 z" RenderTransformOrigin="0.5 0.5">
+                <Path.RenderTransform>
+                    <RotateTransform Angle="45"/>
+                </Path.RenderTransform>
+            </Path>
+        </Canvas>
+        <Canvas>
+            <Path Fill="Red" Data="M50,0 L0,50 H25 V100 H75 V50 H100 z" RenderTransformOrigin="0.5 0.5"/>
+            <Path Fill="Green" Data="M50,0 L0,50 H25 V100 H75 V50 H100 z" RenderTransformOrigin="0.5 0.5">
+                <Path.RenderTransform>
+                    <SkewTransform AngleX="30"/>
+                </Path.RenderTransform>
+            </Path>
+        </Canvas>
+        <Canvas>
+            <Path Fill="Red" Data="M50,0 L0,50 H25 V100 H75 V50 H100 z" RenderTransformOrigin="0.5 0.5"/>
+            <Path Fill="Green" Data="M50,0 L0,50 H25 V100 H75 V50 H100 z" RenderTransformOrigin="0.5 0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform X="50"/>
+                        <RotateTransform Angle="-10"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+        </Canvas>
+        <UniformGrid Columns="2">
+            <StackPanel>
+                <Button Content="A"/>
+                <Button Content="B"/>
+                <Button Content="C">
+                    <Button.RenderTransform>
+                        <ScaleTransform ScaleY="0.5"/>
+                    </Button.RenderTransform>
+                </Button>
+                <Button Content="D"/>
+                <Button Content="E"/>
+            </StackPanel>
+            <StackPanel>
+                <Button Content="A"/>
+                <Button Content="B"/>
+                <Button Content="C">
+                    <Button.LayoutTransform>
+                        <ScaleTransform ScaleY="0.5"/>
+                    </Button.LayoutTransform>
+                </Button>
+                <Button Content="D"/>
+                <Button Content="E"/>
+            </StackPanel>
+        </UniformGrid>
+    </UniformGrid>
+</Window>
