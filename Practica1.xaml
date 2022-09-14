@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Practica1" Height="450" Width="800">
     <Canvas>
-        <Path Width="100" Height="100" Data="M10,100 h30 v-30 h20 v30 h30 v-60 h10 l-10,-30 h-80 l-10,30 h10 v60 z" Stroke="Black" Fill="Black">
+        <Path Width="100" Height="100" Data="M10,100 h30 v-30 h20 v30 h30 v-50 h10 l-10,-40 h-80 l-10,40 h10 v50 z
+              M15,10 v-5 h-3 v-5 h20 v5 h-3 v5 z" Stroke="Black" Fill="Black"/>
     </Canvas>
 </Window>
