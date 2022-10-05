@@ -6,7 +6,50 @@
         xmlns:local="clr-namespace:Graficacion"
         mc:Ignorable="d"
         Title="Mariquita" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <Canvas Width="100" Height="100">
+        <Canvas.RenderTransform>
+                <RotateTransform Angle="-20"></RotateTransform>
+        </Canvas.RenderTransform>
+        <Ellipse Height="50" Width="50" Fill="DarkRed" Canvas.Left="25" Canvas.Top="25"/>
+        <Ellipse Height="5" Width="5" Fill="Black" Canvas.Left="47.5" Canvas.Top="35"/>
+        <Ellipse Height="5" Width="5" Fill="Black" Canvas.Left="35" Canvas.Top="37"/>
+        <Ellipse Height="5" Width="5" Fill="Black" Canvas.Left="60" Canvas.Top="37"/>
+        <Ellipse Height="5" Width="5" Fill="Black" Canvas.Left="47.5" Canvas.Top="47.5"/>
+        <Ellipse Height="5" Width="5" Fill="Black" Canvas.Left="47.5" Canvas.Top="60"/>
+        <Ellipse Height="5" Width="5" Fill="Black" Canvas.Left="35" Canvas.Top="58"/>
+        <Ellipse Height="5" Width="5" Fill="Black" Canvas.Left="60" Canvas.Top="58"/>
+        <Ellipse Height="40" Width="27" Fill="Gray" Opacity="0.3" Canvas.Left="30" Canvas.Top="25">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <SkewTransform AngleX="-30"></SkewTransform>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse Height="40" Width="27" Fill="Transparent" Canvas.Left="30" Canvas.Top="25" Stroke="Black">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <SkewTransform AngleX="-30"></SkewTransform>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse Height="40" Width="27" Fill="Gray" Opacity="0.3" Canvas.Left="43" Canvas.Top="25">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <SkewTransform AngleX="30"></SkewTransform>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse Height="40" Width="27" Fill="Transparent" Canvas.Left="43" Canvas.Top="25" Stroke="Black">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <SkewTransform AngleX="30"></SkewTransform>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Canvas Width="25" Height="25" Canvas.Left="38" Canvas.Top="5">
+            <Ellipse Height="25" Width="25" Fill="Black"/>
+            <Path Data="m1,5 v-10" Canvas.Left="5" Stroke="Black" /> 
+            <Path Data="m15,5 v-10" Canvas.Left="5" Stroke="Black" /> 
+        </Canvas>
+    </Canvas>
 </Window>
