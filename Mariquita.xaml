@@ -8,7 +8,7 @@
         Title="Mariquita" Height="450" Width="800">
     <Canvas Width="100" Height="100">
         <Canvas.RenderTransform>
-                <RotateTransform Angle="-20"></RotateTransform>
+                <RotateTransform Angle="-35"></RotateTransform>
         </Canvas.RenderTransform>
         <Ellipse Height="50" Width="50" Fill="DarkRed" Canvas.Left="25" Canvas.Top="25"/>
         <Ellipse Height="5" Width="5" Fill="Black" Canvas.Left="47.5" Canvas.Top="35"/>
@@ -25,7 +25,7 @@
                 </TransformGroup>
             </Ellipse.RenderTransform>
         </Ellipse>
-        <Ellipse Height="40" Width="27" Fill="Transparent" Canvas.Left="30" Canvas.Top="25" Stroke="Black">
+        <Ellipse Height="40" Width="27" Fill="Transparent" Canvas.Left="30" Canvas.Top="25" Stroke="Black" StrokeThickness="0.5">
             <Ellipse.RenderTransform>
                 <TransformGroup>
                     <SkewTransform AngleX="-30"></SkewTransform>
@@ -39,7 +39,7 @@
                 </TransformGroup>
             </Ellipse.RenderTransform>
         </Ellipse>
-        <Ellipse Height="40" Width="27" Fill="Transparent" Canvas.Left="43" Canvas.Top="25" Stroke="Black">
+        <Ellipse Height="40" Width="27" Fill="Transparent" Canvas.Left="43" Canvas.Top="25" Stroke="Black" StrokeThickness="0.5">
             <Ellipse.RenderTransform>
                 <TransformGroup>
                     <SkewTransform AngleX="30"></SkewTransform>
