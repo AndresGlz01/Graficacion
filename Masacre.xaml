@@ -6,7 +6,33 @@
         xmlns:local="clr-namespace:Graficacion"
         mc:Ignorable="d"
         Title="Masacre" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
-</Window>
+    <UniformGrid Columns="2"> 
+        <Canvas Width="60" Height="60"> 
+            <Path Stroke="Black" Data="M10,0 h10 q10,0 10,10 v10 q0,10 10,10 h10 q10,0 10,10 v10 q0,10 -10,10 h-10 q-10,0 -10,-10 v-10 q0,-10 -10,-10 h-10 q-10,0 -10,-10 v-10 q0,-10 10,-10 z" />         
+        </Canvas> 
+        <Canvas> 
+            <Canvas Width="100" Height="107.72" x:Name="cubo" Canvas.Left="50" Canvas.Top="14.43"> 
+                <Rectangle Fill="Black" Width="50" Height="50" Canvas.Top="27.72" HorizontalAlignment="Center" VerticalAlignment="Top"> 
+                    <Rectangle.RenderTransform> 
+                        <SkewTransform AngleY="30"/> 
+                    </Rectangle.RenderTransform> 
+                </Rectangle> 
+                <Rectangle RenderTransformOrigin="1,0" Fill="Black" Width="50" Height="50" Canvas.Left="50" Canvas.Top="27.72"> 
+                    <Rectangle.RenderTransform> 
+                        <SkewTransform AngleY="-30"/> 
+                    </Rectangle.RenderTransform> 
+                </Rectangle> 
+            </Canvas> 
+            <Rectangle Canvas.Top="107.72" Width="100" Height="107.72"> 
+                <Rectangle.Fill> 
+                    <VisualBrush Stretch="None" Visual="{Binding ElementName=cubo}"/> 
+                </Rectangle.Fill> 
+            </Rectangle> 
+            <Rectangle Canvas.Top="107.72" Width="100" Height="107.72" Canvas.Left="100"> 
+                <Rectangle.Fill> 
+                    <VisualBrush Stretch="None" Visual="{Binding ElementName=cubo}"/> 
+                </Rectangle.Fill> 
+            </Rectangle> 
+        </Canvas> 
+    </UniformGrid> 
+</Window> 
